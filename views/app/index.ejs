@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<base href="/">
+
+	<title>Insta</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body class="grid">
+	<div class="progress-bar-wrapper">
+		<div class="progress-bar"></div>
+	</div>
+
+	<div id="content" class="container content wow fadeIn">
+		<table class="table-responsive">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th data-sort="tag" class="">tag</th>
+					<th data-sort="user" class="">User</th>
+					<th @click="sort_by" data-sort="followers" class="sortable">Followers</th>
+					<th @click="sort_by" data-sort="likes" class="sortable">Likes</th>
+					<th @click="sort_by" data-sort="comments" class="sortable">Comments</th>
+					<th data-sort="image" class="">Image</th>
+					<th data-sort="imagedate" class="">Image DT</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+					<th>#</th>
+					<th data-sort="tag" class="">tag</th>
+					<th data-sort="user" class="">User</th>
+					<th @click="sort_by" data-sort="followers" class="sortable">Followers</th>
+					<th @click="sort_by" data-sort="likes" class="sortable">Likes</th>
+					<th @click="sort_by" data-sort="comments" class="sortable">Comments</th>
+					<th data-sort="image" class="">Image</th>
+					<th data-sort="imagedate" class="">Image DT</th>
+				</tr>
+			</tfoot>
+			<tbody>
+				<tr v-for="( tag, index ) in tags">
+					<td>{{ ++index }}</td>
+					<td><a href="#" @click="collect" :data-tag="tag.tag" class="tag">{{ tag.tag }}</a></td>
+					<td><a :href="tag.user_url" target="_blank">{{ tag.user }}</a></td>
+					<td>{{ tag.followers }}</td>
+					<td>{{ tag.likes }}</td>
+					<td>{{ tag.comments }}</td>
+					<td><a :href="tag.image_url" target="_blank">{{ tag.image }}</a></td>
+					<td>{{ tag.imagedate }}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<textarea id="tags_place" class="tags_place"></textarea>
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>

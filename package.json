@@ -1,0 +1,43 @@
+{
+  "name": "insta",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "engines": {
+    "node": ">=4.3.2"
+  },
+  "author": "MarkSchk",
+  "license": "ISC",
+  "devDependencies": {
+    "@google-cloud/nodejs-repo-tools": "1.4.17",
+    "animate.css": "^3.6.1",
+    "async": "^2.6.1",
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "events": "^3.0.0",
+    "express": "^4.16.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean-css": "^3.9.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-group-css-media-queries": "^1.2.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "jsdom": "^11.11.0",
+    "nodemon": "^1.17.5",
+    "qs": "^6.5.2",
+    "request": "^2.87.0",
+    "sqlite3": "^4.0.0",
+    "vue": "^2.5.16",
+    "vuejs": "^3.0.1",
+    "wowjs": "^1.1.3"
+  }
+}
